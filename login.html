@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/login.css" />
+    <link rel="stylesheet" href="./Styles/mobile.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>ساخت حساب کاربری</title>
+  </head>
+  <body>
+    <section class="login-container">
+      <form action="" id="login-form">
+        <h1>ساخت اکانت</h1>
+        <p>از قبل یک حساب کاربری دارید؟<span>وارد شوید</span></p>
+        <div class="flex flex-col">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="text"
+            placeholder="نام کاربری"
+          />
+        </div>
+        <div class="flex flex-col">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="رمز عبور"
+            class="text"
+          />
+          <img
+            src="./assets/icons/unvisible.png"
+            alt="img"
+            id="hide-password"
+          />
+        </div>
+        <div class="pop_up-container">
+          <div class="popup" id="popup">
+            <p>آیا برای خروج اطمینان دارید؟</p>
+            <div class="button-area">
+              <button type="button" onclick="disAgreePopUp()">
+                متوجه شدم!!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div><button id="login-button">ورود</button></div>
+        <div class="terms flex justify-between">
+          <div class="flex" style="gap: 5px; line-height: 340%">
+            <input type="checkbox" id="check-box" />
+            <p>من با<span> شرایط و قوانین</span> موافقم</p>
+          </div>
+          <a href="/index.html">
+            <p
+              style="
+                color: #fff;
+                text-underline-offset: 4px;
+                cursor: pointer;
+                text-decoration: underline;
+                font-size: 1rem;
+                font-weight: 700;
+              "
+            >
+              بازگشت به صفحه اصلی
+              <img
+                src="./assets/icons/house.png"
+                alt=""
+                style="
+                  position: relative;
+                  right: 0rem;
+                  bottom: -10px;
+                  margin: 2px;
+                "
+              />
+            </p>
+          </a>
+        </div>
+      </form>
+    </section>
+    <!-- scripts -->
+    <script src="./scripts/hidepassword.js" type="module"></script>
+  </body>
+</html>

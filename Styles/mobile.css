@@ -1,0 +1,244 @@
+@media screen and (max-width: 966px) {
+  html {
+    font-size: 0.75rem;
+  }
+  input[type="search"] {
+    display: none;
+  }
+  header {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: left;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+  }
+  .section img.slider {
+    width: 150%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+  }
+
+  .main .hide {
+    visibility: hidden;
+  }
+  .slider {
+    height: 50vh;
+  }
+  .img-area {
+    display: none;
+  }
+  .show-sidebar {
+    visibility: visible;
+  }
+  .shop-container {
+    display: flex;
+    flex-direction: row;
+  }
+  #cart {
+    margin: 0rem;
+  }
+  #cart .buy-area {
+    justify-content: center;
+    align-items: center;
+    /* line-height: 250%; */
+    border-radius: 0.5rem;
+  }
+  
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-alternative {
+    visibility: visible;
+  }
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+  .product-grid-item img {
+    height: auto;
+    object-fit: contain;
+  }
+  .txt-area {
+    display: none;
+    width: 100%;
+  }
+  .cart-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .cart-btn .shop-area {
+    overflow: hidden;
+  }
+  .show-area {
+    width: 100%;
+    padding: 0;
+  }
+  .show-area img {
+    height: 20rem;
+    width: 20rem;
+  } 
+  .footer {
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+  }
+  .login-container {
+    max-width: 35rem;
+    width: 100%;
+  }
+  .txt-headline {
+    display: none;
+  }
+  .cart-items {
+    width: 80%;
+  }
+  #icon {
+    margin-left: 1.5rem;
+    cursor: pointer;
+  }
+   .mobile {
+    display: none;
+  }
+   .ads-area {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+  .ads {
+    width: 100% !important;
+    max-width: 400px; 
+  }
+  .drop-down {
+    display: block;
+  }
+  .dropdown {
+  position: relative;
+  width: fit-content;
+  font-family: sans-serif;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+.dropdown img {
+  z-index: -5;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 180px;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f9f9f9;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+  .ads img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 0.25rem;
+  }
+  .magazine-news {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+  }
+  .magazine-area:nth-child(4) {
+    margin-bottom: 4rem;
+  }
+  .magazine-area {
+    width: 90% !important;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-direction: column !important;
+  }
+  .magazine-area img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 0.25rem;
+    transition: none !important; 
+  }
+  .text-area {
+    padding: 1rem;
+  }
+  .text-area a {
+    font-size: 1.1rem !important;
+  }
+  .text-area p {
+    font-size: 0.9rem !important;
+  }
+  .magazine-area h4 {
+    font-size: 1.1rem !important;
+  }
+  .magazine-area h4 img {
+      width: 20px !important;
+      height: 20px !important;
+      transition: all 0.3s ease-in-out !important;
+      
+    }
+    .magazine-area img {
+      transition: all 0.3s ease-in-out;
+    }
+      .magazine-area h4 img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  .magazine-area:hover img {
+    transform: none;
+  }
+  .show-item {
+    display: none;
+  }
+  
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section img.slider {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+  }
+  .magazine-sold {
+    display: none;
+  }
+}
+@media screen and (max-width: 1553px) {
+  .sold-info {
+    overflow: hidden;
+    min-width: 100%;
+  }
+  .txt-area {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sold-info , .txt-headline , .amazing-sold {
+    display: none;
+  }
+}

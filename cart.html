@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/cart.css" />
+    <link rel="stylesheet" href="./Styles/mobile.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>سبد خرید کاربر</title>
+  </head>
+  <body>
+    <header class="flex items-center" id="header">
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="" />
+      </a>
+      <input
+        type="search"
+        name=""
+        id=""
+        placeholder="جستجو در محصول، دسته یا برند..."
+      />
+      <div class="flex login">
+        <a href="/index.html"
+          ><button id="logout-button">
+            <span>بازگشت</span>
+            <img src="./assets/icons/return.png" alt="" /></button
+        ></a>
+
+        <p class="search-alternative hover">جستجو</p>
+      </div>
+    </header>
+    <header class="menu">
+      
+      <div class="main">
+        <p class="hover">صفحه اصلی</p>
+        <nav class="drop-down">
+          <ul>
+            <li>
+              <a class="hover">محصولات</a>
+              <ul id="submenu">
+                <li class="hover">کفش ورزشی</li>
+                <li class="hover">پوشاک ورزشی</li>
+                <li class="hover">تجهیزات ورزشی</li>
+                <li class="hover">کیف و کوله</li>
+                <li class="hover">توپ</li>
+              </ul>
+            </li>
+            <img src="./assets/icons/down.png" />
+          </ul>
+        </nav>
+        <p class="hover">برند ها</p>
+        <p class="hover">دانستنی ها</p>
+        <p class="hover">درباره ما</p>
+        <p class="hover">ثبت نام</p>
+        <p class="hover">پروفایل من</p>
+        <p class="hover">ارتباط با ما</p>
+      </div>
+    </header>
+    <div class="info">
+      <h3>سبد خرید شما در اورج لند</h3>
+    </div>
+
+    <section class="cart-container flex flex-col">
+      <p class="font-rokh font-size-2 font-weight-700">سبد خرید شما :</p>
+      <div id="cart_items-container" class="flex flex-col"></div>
+    </section>
+    <footer class="footer padding-1">
+      <ul>
+        <h6 class="title">ارتباط با ما</h6>
+        <li>تلفن : 02165236371</li>
+        <li>تلفن : 09331171313</li>
+        <li>Orglandsport@gmail.com</li>
+        <li>
+          خرید حضوری : تهران شهریار خیابان مفتح مجتمع تجاری الماس شهر طبقه سوم
+          پلاک 425
+        </li>
+      </ul>
+      <ul>
+        <h6 class="title">لینک های مرتبط</h6>
+        <li>قوانین</li>
+        <li>تلفن:09331171313</li>
+        <li>اینستاگرام</li>
+        <li>راهنمای سایز</li>
+      </ul>
+      <ul>
+        <h6 class="title">دسترسی سریع</h6>
+        <li>خرید کفش فوتسال</li>
+        <li onclick="switchLocation(0)">خرید کفش پیاده روی</li>
+        <li>خرید توپ ورزشی</li>
+        <li>خرید شلوار گلری</li>
+      </ul>
+      <ul>
+        <h6 class="title">لینک های مرتبط</h6>
+        <li>شرایط تعویض سایز و مرجوع کردن سفارش</li>
+        <li>ضمانت150درصدی اصالت</li>
+        <li>ضمانت بهترین قیمت</li>
+      </ul>
+      <ul>
+        <h6 class="title">دسترسی سریع</h6>
+        <li>پیگیری پست</li>
+        <li>پیگیری تیپاکس</li>
+      </ul>
+    </footer>
+    <footer class="copyright">
+      <p>&copy; &ensp;تمامی حقوق این وب سایت برای فروشگاه اورج لند محفوظ است</p>
+      <p>طراحی سایت : حامی فرانت</p>
+      <div class="footer-btn">
+        <a href="#header">
+          <button>
+            <img src="./assets/icons/up-arrow.png" alt="" draggable="false" />
+          </button>
+        </a>
+      </div>
+    </footer>
+    <script src="./scripts/cart.js"></script>
+    <script>
+      const deleteItem = (id) => {
+        if (confirm("آیا برای حذف اطمینان دارید")) {
+          const loggedInUser = JSON.parse(
+            localStorage.getItem("logged-in")
+          )?.username;
+
+          if (!loggedInUser) {
+            alert("لطفا ابتدا وارد شوید");
+            return;
+          }
+
+          let userData = JSON.parse(localStorage.getItem(loggedInUser)) || {
+            username: loggedInUser,
+            cart: [],
+          };
+          let cart = userData.cart;
+
+          const updatedCart = cart.filter((product) => product.id !== id);
+
+          localStorage.setItem(
+            loggedInUser,
+            JSON.stringify({ username: loggedInUser, cart: updatedCart })
+          );
+
+          location.reload();
+        }
+      };
+    </script>
+  </body>
+</html>

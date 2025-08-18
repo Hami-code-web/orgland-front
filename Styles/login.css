@@ -1,0 +1,71 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #676179;
+}
+.login-container {
+  background-color: #2b2738;
+  max-width: 60rem;
+  width: 100%;
+  padding: 5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+p {
+  color: #fff;
+  margin: 2rem 0;
+}
+span {
+  color: #5c5080;
+  cursor: pointer;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: start;
+}
+.flex img {
+  object-fit: contain;
+  position: relative;
+  left: 2rem;
+}
+::placeholder {
+  font-size: 1rem;
+}
+button {
+  font-size: 1rem;
+}
+input[type="text"]:focus {
+  border: 2px solid #fff;
+  font-style: #fff;
+}
+input[type="password"]:focus {
+  border: 2px solid #fff;
+  font-style: #fff;
+}
+:where(button, .text) {
+  width: 70%;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #3b364c;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #747280;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+button {
+  background-color: #6e54b5;
+  color: #fff;
+}
+.terms {
+  gap: 0.3rem;
+  width: 70%;
+}

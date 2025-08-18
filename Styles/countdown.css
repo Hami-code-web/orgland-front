@@ -1,0 +1,27 @@
+.countdown-area {
+  gap: 2rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+.container {
+  background-color: var(--footer-color);
+  color: var(--secondary-color);
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.container span {
+  font-size: 1.2rem;
+}
+.time {
+  color: #8f8f8f;
+  font-weight: 600;
+}

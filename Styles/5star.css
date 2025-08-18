@@ -1,0 +1,30 @@
+.rating {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: "\2605";
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #6f00ff;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/mobile.css" />
+    <link rel="stylesheet" href="./Styles/futsal.css">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+    <script src="./scripts/futsal.js"></script>
+    <script src="./scripts/hidepassword.js"></script>
+    <title>کفش فوتسال اصل 👟 خرید کفش های سالنی اورجینال با ضمانت </title>
+  </head>
+  <body>
+    <header class="flex items-center" id="header">
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="" />
+      </a>
+      <input
+        type="search"
+        name=""
+        id=""
+        placeholder="جستجو در محصول، دسته یا برند..."
+      />
+      <div class="flex login" id="header-dynamic-container">
+        <!-- <a href="login.html" class="login-btn">
+          <img src="./assets/icons/user.png" alt="" />
+          <span class="hover">ورود</span>
+        </a> -->
+        <!-- <div class="shop-container flex justify-center" style="gap: 7rem;">
+          <a href="#" class="cart-btn" id="cart">
+            <div class="shop-area">
+              <img src="./assets/icons/cartw.png" alt="cart" class="img-area" />
+              <span class="buy-area">سبد خرید<span id="card-badge">(0)</span></span>
+            </div>
+          </a>
+          <button id="logout-button">
+            <span>خروج</span>
+            <img src="./assets/icons/logout.png" alt="" />
+          </button>
+        </div> -->
+        <div class="pop_up-container">
+          <div class="popup" id="popup">
+            <p>آیا برای خروج اطمینان دارید؟</p>
+            <div class="button-area">
+              <button type="submit" onclick="closePopUp()">بله</button>
+              <button type="button" onclick="disAgreePopUp()">خیر</button>
+            </div>
+          </div>
+        </div>
+        <p class="search-alternative hover">جستجو</p>
+      </div>
+    </header>
+    <header class="menu" style="background-color: #fff">
+      <a href="#" class="cart-btn" id="cart">
+        <div class="shop-area">
+          <img src="./assets/icons/cartw.png" alt="cart" class="img-area" />
+          <span class="buy-area">سبد خرید<span id="card-badge">(0)</span></span>
+        </div>
+      </a>
+      <div class="main">
+        <p class="hover">صفحه اصلی</p>
+        <nav class="drop-down">
+          <ul>
+            <li>
+              <a class="hover">محصولات</a>
+              <ul id="submenu">
+                <li class="hover">کفش ورزشی</li>
+                <li class="hover">پوشاک ورزشی</li>
+                <li class="hover">تجهیزات ورزشی</li>
+                <li class="hover">کیف و کوله</li>
+                <li class="hover">توپ</li>
+              </ul>
+            </li>
+            <img src="./assets/icons/down.png" />
+          </ul>
+        </nav>
+        <p class="hover">برند ها</p>
+        <p class="hover">دانستنی ها</p>
+        <p class="hover">درباره ما</p>
+        <p class="hover">ثبت نام</p>
+        <p class="hover">پروفایل من</p>
+        <p class="hover">ارتباط با ما</p>
+      </div>
+    </header>
+    <br />
+    <main class="padding-3">
+      <p id="products-grid" class="font-rokh font-size-3 weight-700">محصولات</p>
+      <div class="product-grid">
+        <article class="product-grid-item">
+          <img src="./assets/images/futsal shoes/NIKE TIEMPO LEGEND 9 ACADEMY.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE TIEMPO LEGEND 9 ACADEMY</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >3,850,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images/futsal shoes/TOP SALA II.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >ADIDAS TOP SALA II WHITE AND GOLD</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,300,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/futsal shoes/ASICS CALETTO WD 9.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >ASICS CALCETTO WHITE AND GRAY WD 9</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >3,850,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images//futsal shoes/lonar-gato.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE LUNAR GATO II GRAY AND PURPLE</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,300,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/futsal shoes/MUNICH PRISMA INDOOR BOOTS.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >X MUNICH PRISMA INDOOR BOOTS</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,450,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <div class="sold-alert color-white"><h5>20% تخفیف</h5></div>
+          <img src="./assets/images/futsal shoes/JOMA TOP FLEX WHITE AND GOLD.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >JOMA TOP FLEX WHITE AND GOLD</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >3,800,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/futsal shoes/NIKE STREET GATO.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE street gato black and purple</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >5,750,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images/futsal shoes/NIKE TIEMPO LEGEND 10 ACADEMY.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >nike tiempo legend 10 academy</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,750,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/futsal shoes/nike tiempo primier sala II.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE premier sala ii dark blue</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,700,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images/futsal shoes/nike tiempo legend 9 pro.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE tiempo legend 9 pro react</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >5,750,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        
+    </main>
+    <footer class="footer padding-1">
+      <ul>
+        <h6 class="title">ارتباط با ما</h6>
+        <li>تلفن : 02165236371</li>
+        <li>تلفن : 09331171313</li>
+        <li>Orglandsport@gmail.com</li>
+        <li>خرید حضوری : تهران شهریار خیابان مفتح مجتمع تجاری الماس شهر طبقه سوم پلاک 425</li>
+      </ul>
+      <ul>
+        <h6 class="title">لینک های مرتبط</h6>
+        <li>قوانین</li>
+        <li>تلفن:09331171313</li>
+        <li>اینستاگرام</li>
+        <li>راهنمای سایز</li>
+      </ul>
+      <ul>
+        <h6 class="title">دسترسی سریع</h6>
+        <li>خرید کفش فوتسال</li>
+        <li onclick="switchLocation(0)">خرید کفش پیاده روی</li>
+        <li>خرید توپ ورزشی </li>
+        <li>خرید شلوار گلری
+        </li>
+      </ul>
+      <ul>
+        <h6 class="title">لینک های مرتبط
+        </h6>
+        <li>شرایط تعویض سایز و مرجوع کردن سفارش
+        </li>
+        <li>ضمانت150درصدی اصالت
+        </li>
+        <li>ضمانت بهترین قیمت
+        </li>
+      </ul>
+      <ul>
+        <h6 class="title">دسترسی سریع
+        </h6>
+        <li>پیگیری پست
+        </li>
+        <li>پیگیری تیپاکس
+        </li>
+      </ul>
+    </footer>
+    <footer class="copyright">
+      <p> &copy; &ensp;تمامی حقوق این وب سایت برای فروشگاه اورج لند محفوظ است</p>
+      <p>طراحی سایت : حامی فرانت</p>
+      <div class="footer-btn">
+        <a href="#header">
+          <BUTTON>
+            <img src="./assets/icons/up-arrow.png" alt="" draggable="false">
+          </BUTTON>
+        </a>
+      </div>
+    </footer>
+    <script>
+     function switchLocation(counter) {
+  if (counter == 0) {
+    counter = 1;
+    setTimeout(function () {
+      switchLocation(counter);
+    }, 1000);
+  } else {
+    window.location = "index.html";
+  }
+}
+const logOut = () => {
+if(confirm("آیا برای خروج اطمینان دارید؟")) {
+localStorage.removeItem("logged-in")
+location.reload() 
+}}
+let popUp = document.getElementById("popup")
+      function openPopUp() {
+        popUp.classList.add("open-popup")
+      }
+      function closePopUp() {
+        localStorage.removeItem("logged-in")
+        location.reload()
+      }
+      function disAgreePopUp() {
+        popUp.classList.remove("open-popup")
+      }
+      window.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 10) {
+        popUp.style.opacity = "0";
+    } else {
+        popUp.style.opacity = "1";
+    }
+  });
+    </script>
+  </body>
+</html>

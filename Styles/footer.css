@@ -1,0 +1,27 @@
+.footer {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer li {
+  list-style: none;
+  color: #999999;
+  text-align: right;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.8s ease;
+}
+.footer ul li:hover {
+  color: #7f307c;
+  font-weight: 600;
+}
+.footer ul {
+  max-width: 16rem;
+  width: 100%;
+}
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e72c9e;
+  margin-bottom: 1.5rem;
+}

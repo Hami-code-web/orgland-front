@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/mobile.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <script src="./scripts/countdown.js"></script>
+    <script src="./scripts/anotherpage.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
+    <title>فروشگاه کفش فوتسال - لوازم و پوشاک ورزشی اورجینال - اورج لند </title>
+  </head>
+  <body>
+    <div class="fixed-btn">
+      <div title="اینستاگرام" class="intagram app">
+        <a href="#">
+          <img src="./assets/images/instatop.jpg" alt="">
+        </a>
+      </div>
+      <div title="پشتیبانی واتساپ" class="watsapp app">
+        <a href="#">
+          <img src="./assets/images/wwp.png" alt="">
+        </a>
+      </div>
+    </div>
+    <header class="flex items-center" id="header">
+      <a href="index.html">
+        <img src="./assets/images/logo.png" alt="" />
+      </a>
+      <img src="./assets/icons/moon.png" alt="moon" id="icon">
+      <input
+        type="search"
+        name=""
+        id=""
+        placeholder="جستجو در محصول، دسته یا برند..."
+      />
+      <div class="flex login" id="header-dynamic-container">
+        <div class="pop_up-container">
+          <div class="popup" id="popup">
+            <p>آیا برای خروج اطمینان دارید؟</p>
+            <div class="button-area">
+              <button type="submit" onclick="closePopUp()">بله</button>
+              <button type="button" onclick="disAgreePopUp()">خیر</button>
+            </div>
+          </div>
+        </div>
+        <p class="search-alternative hover">جستجو</p>
+      </div>
+    </header>
+    <header class="menu">
+      <div class="main">
+        <p class="hover show-sidebar" onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></p>
+        <p class="hover hide">صفحه اصلی</p>
+        <nav class="drop-down">
+          <ul>
+            <li>
+              <p class="hover hide">محصولات</p>
+              <ul id="submenu">
+                <li class="hover">کفش ورزشی</li>
+                <li class="hover">پوشاک ورزشی</li>
+                <li class="hover">تجهیزات ورزشی</li>
+                <li class="hover">کیف و کوله</li>
+                <li class="hover">توپ</li>
+              </ul>
+            </li>
+            <img src="./assets/icons/down.png" class="hide"/>
+          </ul>
+        </nav>
+        <p class="hover hide">برند ها</p>
+        <p class="hover hide">دانستنی ها</p>
+        <p class="hover hide">درباره ما</p>
+        <p class="hover hide">ثبت نام</p>
+        <p class="hover hide">پروفایل من</p>
+        <p class="hover hide">ارتباط با ما</p>
+      </div>
+      <div class="sidebar">
+        <p class="hover" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></p>
+        <p class="hover">صفحه اصلی</p>
+        <div class="dropdown">
+          <img src="./assets/icons/down.png" alt="">
+          <p onclick="toggleDropdown()" class="dropdown-toggle">محصولات</p>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li>کفش ورزشی</li>
+            <li>پوشاک ورزشی</li>
+            <li>تجهیزات ورزشی</li>
+            <li>کیف و کوله</li>
+            <li>توپ</li>
+          </ul>
+        </div>
+        <p class="hover">برند ها</p>
+        <p class="hover">دانستنی ها</p>
+        <p class="hover">درباره ما</p>
+        <p class="hover">ثبت نام</p>
+        <p class="hover">پروفایل من</p>
+        <p class="hover">ارتباط با ما</p>
+      </div>
+    </header>
+    <div class="section">
+      <img src="./assets/images/hero-section2.JPG" alt="" class="slider" />
+      <div class="flex justify-between see-product">
+        <div class="flex section-content">
+          <!-- <h1 class="color-white">فروشگاه اینترنتی اورج لند</h1> -->
+          <!-- <p class="size-size-2 font weight-700 color-white">
+            خرید بهترین کفش های فوتسالی جهان
+          </p> -->
+        </div>
+        <div>
+          <a
+            href="#products-grid"
+            class="flex flex-col justify-center items-center show-item"
+          >
+            <span
+              class="font-rokh font-weight-700 see-item color-white"
+              style=" font-size: 2rem"
+              >مشاهده محصولات</span
+            >
+            <img
+              src="./assets/icons/down-arrow.png"
+              alt=""
+              class="see-products"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <main class="padding-3">
+      <p id="products-grid" class="font-rokh font-size-3 weight-700">محصولات</p>
+      <div class="product-grid"> 
+      </div>
+    </main> 
+    <div class="txt-headline">
+      <h2 class="text-center">
+        <span>پیشنهاد شگفت انگیز</span>
+      </h2>
+    </div>
+    <section class="flex amazing-sold">
+      <div class="txt-area padding-1">
+        فروشگاه اورج لند از سال 97 فعالیت حرفه ای خود را در زمینه فروش تخصصی کفش
+        های فوتسالی اورجینال آغاز کرده و با افزایش تنوع و حفظ اصالت محصولات و با
+        تاکید بر رضایت مشتریان وبسایت اینترنتی خود را راه اندازی کرده. کاربران
+        گرامی و مشتریان عزیز فروشگاه اینترنتی اورج لند ، شما میتوانید در صورت
+        بروز هر گونه مشکل و یا راهنمای خرید خود همچنین دریافت اطلاعات و آگاهی
+        های لازم برای خرید بهترین جنس مورد نظر خود متناسب با نیاز خودتان که
+        بتوانید یک عمر با خیال راحت از محصولات خریداری شده ی خود استفاده کنید ،
+        با شماره های درج شده تماس حاصل فرمایید و از ما مشاوره رایگان دریافت کنید
+        . همچنین میتوانید مشکلات خود را در رابطه با محصولات خریداری شده ی خود را
+        برای ما بازگو کنید تا اقدامات لازم را برای شما عزیزان انجام دهیم.
+      </div>
+      <div class="flex sold-info">
+        <div class="show-area">
+          <img src="./assets/images/NIKE DOWNSHIFTER 11-PINK.jfif" alt="" />
+        </div>
+        <div class="show-model margin-1">
+          <h4>کفش پیاده روی نایک مدل NIKE DOWNSHIFTER 11</h4>
+          <br />
+          <br />
+          <span style="font-size: 1.2rem; text-decoration: line-through;"><span style="color: #f5587b; font-size: 1.2rem">3,800,000 &ensp;</span>تومان</span></span>
+          <br>
+          <span style="font-size: 1.2rem;"><span style="font-size: 1.2rem">3,250,000 &ensp;</span>تومان</span></span>
+          <div class="countdown-area">
+            <div class="container">
+                <span id="second" class="counter">00</span>
+                <span class="time">ثانیه</span>
+            </div>
+            <div class="container">
+                <span id="min" class="counter">00</span>
+                <span class="time">دقیقه</span>
+            </div>
+            <div class="container">
+                <span id="hour" class="counter">00</span>
+                <span class="time">ساعت</span>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <div class="ads-area flex margin-1">
+      <div class="ads">
+        <img src="./assets/images/shoes.jfif" alt="pp">
+      </div>
+      <div class="ads">
+        <img src="./assets/images/socks.jfif" alt="pp">
+      </div>
+    </div>
+    <div class="ads-area flex margin-1">
+      <div class="ads mobile">
+        <img src="./assets/images/sport.jfif" alt="pp">
+      </div>
+    </div>
+    <h3 class="text-center margin-3 font-weight-500">
+      مقالات و دانستنی ها
+    </h3>
+    <div class="magazine-news">
+      <div class="magazine-area">
+        <img src="./assets/images/magazine/futsal.jfif" alt="">
+        <div class="text-area">
+          <a href="#">
+            برترین کفش های اورجینال فوتسال
+          </a>
+          <p>
+            جادوی فوتسال این است که می توانید آن را روی سطوح مختلف با هر کفش مخصوص ورزش های داخل سالن بازی کنید؛ با این حال اگر می خواهید در بالاترین سطح بازی کنید، قطعاً به کفش هایی نیاز دارید که منحصراً برای این ورزش ساخته شده باشند.
+           </p>
+          <h4 class="hover">
+            <img src="./assets/icons/up.png" alt="">
+            ادامه مطلب
+          </h4>
+        </div>
+      </div>
+      <div class="magazine-area">
+        <img src="./assets/images/magazine/adidas.jfif" alt="">
+        <div class="text-area">
+          <a href="#">
+            
+            آیا کفش های فوتسال برای دویدن مناسب هستند؟
+          </a>
+          <p>
+            دویدن و فوتبال از محبوب ترین فعالیت های بدنی در جهان هستند، آنها به مهارت های مشابهی نیاز دارند، اما تفاوت های مهمی نیز دارند. افرادی که فوتبال داخل سالن بازی می کنند می دانند که کفش های فوتسال در حین
+          </p>
+          <h4 class="hover">
+            <img src="./assets/icons/up.png" alt="">            
+            ادامه مطلب
+          </h4>
+        </div>
+      </div>
+      <div class="magazine-area">
+        <img src="./assets/images/magazine/nike.jfif" alt="">
+        <div class="text-area">
+          <a href="#">
+            مزایای کفش فوتسال مناسب
+          </a>
+          <p>اگر در داخل سالن با کفش تنیس یا کفش پیاده روی فوتسال بازی می کنید، ممکن است دو مشکل رایج داشته باشید، اینکه کنترلی بر توپ نخواهید داشت و احتمالا سر خواهید خورد. در واقع ظاهر کفش های فوتسال شبیه</p>
+          <h4 class="hover">
+            <img src="./assets/icons/up.png" alt="">
+            ادامه مطلب
+          </h4>
+        </div>
+      </div>
+      <div class="magazine-area">
+        <img src="./assets/images/magazine/joma.jfif" alt="">
+        <div class="text-area">
+          <a href="#">چرا کفش های فوتسال جوما بهترین انتخاب هستند؟</a>
+          <p>
+              انتخاب کفش مناسب برای انجام ورزش های داخل سالن می تواند پیچیدگی فراوانی داشته باشد؛ اهمیت کفش خوب برای ورزش فوتسال نیز تاثیر مستقیمی بر ارائه توانایی های بازیکن دارد. تنوع بسیاری از برندهای جوما و نایکی
+          </p>
+          <h4 class="hover">
+            <img src="./assets/icons/up.png" alt="">
+            ادامه مطلب
+          </h4>
+        </div>
+      </div>
+    </div>
+    <!-- =========================
+    footer Section
+    ============================== -->
+    <footer class="footer padding-1">
+      <ul>
+        <h6 class="title">ارتباط با ما</h6>
+        <li>تلفن : 02165236371</li>
+        <li>تلفن : 09331171313</li>
+        <li>Orglandsport@gmail.com</li>
+        <li>خرید حضوری : تهران شهریار خیابان مفتح مجتمع تجاری الماس شهر طبقه سوم پلاک 425</li>
+      </ul>
+      <ul>
+        <h6 class="title">لینک های مرتبط</h6>
+        <li>قوانین</li>
+        <li>تلفن:09331171313</li>
+        <li>اینستاگرام</li>
+        <li>راهنمای سایز</li>
+      </ul>
+      <ul>
+        <h6 class="title">دسترسی سریع</h6>
+        <li onclick="switchLocation(0)">خرید کفش فوتسال</li>
+        <a href="#products-grid">
+          <li>خرید کفش پیاده روی</li>
+        </a>
+        <li>خرید توپ ورزشی </li>
+        <li>خرید شلوار گلری
+        </li>
+      </ul>
+      <ul>
+        <h6 class="title">لینک های مرتبط
+        </h6>
+        <li>شرایط تعویض سایز و مرجوع کردن سفارش
+        </li>
+        <li>ضمانت150درصدی اصالت
+        </li>
+        <li>ضمانت بهترین قیمت
+        </li>
+      </ul>
+      <ul>
+        <h6 class="title">دسترسی سریع
+        </h6>
+        <li>پیگیری پست
+        </li>
+        <li>پیگیری تیپاکس
+        </li>
+      </ul>
+    </footer>
+    <footer class="copyright">
+      <p> &copy; &ensp;تمامی حقوق این وب سایت برای فروشگاه اورج لند محفوظ است</p>
+      <p>طراح سایت : حامی کد</p>
+      <div class="footer-btn">
+        <a href="#header">
+          <BUTTON >
+            <img src="./assets/icons/up-arrow.png" alt="" draggable="false">
+          </BUTTON>
+        </a>
+      </div>
+    </footer>
+    <script>
+      // const openPopUp = () => {
+      //   if(confirm("آیا برای خروج اطمینان دارید؟")) {
+      //     localStorage.removeItem("logged-in")
+      //     location.reload()
+      //   }
+      // }
+      let popUp = document.getElementById("popup")
+      const openPopUp = () => {
+        popUp.classList.add("open-popup")
+      }
+      const closePopUp = () => {
+        localStorage.removeItem("logged-in")
+        location.reload()
+      }
+    
+      const disAgreePopUp = () => {
+        popUp.classList.remove("open-popup")
+      }
+      window.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY;
+    if (scrollPosition > 10) {
+        popUp.style.opacity = "0";
+    } else {
+        popUp.style.opacity = "1";
+    }
+  });
+  const addToCart = (name, price, id, img) => {
+  const loggedInUser = JSON.parse(localStorage.getItem("logged-in"))?.username;
+
+  if (!loggedInUser) {
+    alert("لطفا ابتدا وارد شوید");
+    return;
+  }
+
+  // Retrieve the cart, initialize if it doesn't exist
+  let userData = JSON.parse(localStorage.getItem(loggedInUser)) || { username: loggedInUser, cart: [] };
+  let cart = userData.cart || [];
+
+  // Check if the product is already in the cart
+  const doesProductExistInCart = cart.some((product) => id === product.id);
+
+  if (doesProductExistInCart) {
+    alert("این محصول در سبد خرید موجود است");
+  } else {
+    // Add the new product to the cart
+    cart.push({ name, price, img, id });
+
+    localStorage.setItem(loggedInUser, JSON.stringify({ username: loggedInUser, cart }));
+
+    alert("با موفقیت اضافه شد");
+    
+    location.reload();
+  }
+};
+
+  const goToLogin = () => {
+    location.replace(`${location.origin}/login.html`)
+  }
+  var icon = document.getElementById("icon")
+  icon.onclick  = () => {
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "./assets/icons/sun.png"
+    }else {
+      icon.src = "./assets/icons/moon.png"
+    }
+  }
+  const sideBar = document.querySelector(".sidebar");    
+  function showSidebar() {
+    sideBar.style.visibility = 'visible'
+  }
+  function hideSidebar() {
+    sideBar.style.visibility = 'hidden'
+  }
+  function toggleDropdown() {
+  document.querySelector('.dropdown').classList.toggle('show');
+}
+
+  </script>
+  </body>
+</html>

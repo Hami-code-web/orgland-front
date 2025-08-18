@@ -1,0 +1,418 @@
+.drop-down img {
+  color: #fff;
+  height: 25px;
+  width: 25px;
+  object-fit: contain;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: rotate(90deg);
+}
+.drop-down:hover img {
+  transform: rotate(0deg);
+}
+.drop-down {
+  position: relative;
+}
+.drop-down ul {
+  list-style: none;
+}
+#submenu {
+  border-top: 2px solid #f5587b;
+  position: absolute;
+  top: 2rem;
+  background: #fff;
+  width: 250%;
+  padding: 1rem 1.5rem;
+  visibility: hidden;
+  z-index: 1;
+}
+li:hover #submenu {
+  visibility: visible;
+}
+.drop-down:hover #submenu {
+  visibility: visible;
+}
+#submenu li {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 5px;
+}
+#submenu li:hover {
+  transform: translateX(10px);
+}
+#submenu li:last-child {
+  border-bottom: none;
+}
+/* <article class="product-grid-item">
+          <img
+            src="./assets/images/NIKE AIR ZOOM PEGASUS 38-black&green.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE AIR ZOOM PEGASUS 38-black and green</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,300,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/NIKE REVOLUTION 6.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE REVOLUTION 6-RED AND BLACK</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >3,850,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images/NIKE AIR ZOOM PEGASUS 38-blue&green.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE AIR ZOOM PEGASUS 38-blue and green</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,300,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/NIKE WINFLO 8.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE WINFLO 8-BLACK AND WHITE</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,450,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <div class="sold-alert color-white"><h5>20% تخفیف</h5></div>
+          <img src="./assets/images/NIKE DOWNSHIFTER 11-PINK.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE DOWNSHIFTER 11-PINK AND WHITE</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >3,800,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/NIKE AIR ZOOM PEGASUS 38-eye.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE AIR ZOOM PEGASUS 38-PINK</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >5,750,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images/NIKE AIR ZOOM PEGASUS 38-yellow.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE AIR ZOOM PEGASUS 38-YELLOW</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,750,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img src="./assets/images/NIKE_AIR_ZOOM_38.jfif" alt="" />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE AIR ZOOM 38-BLACK AND ORANGE</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >6,700,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <article class="product-grid-item">
+          <img
+            src="./assets/images/NIKE AIR ZOOM PEGASUS 38-blue&black.jfif"
+            alt=""
+          />
+          <p class="text-center padding-1">
+            <!-- <span>نام</span> -->
+            <span class="font-exo2 weight-600 font-size-7"
+              >NIKE AIR ZOOM PEGASUS 38-BLUE AND BLACK</span
+            >
+          </p>
+          <p class="text-center padding-1">
+            <span style="font-size: 1.2rem"
+              ><span style="color: #f5587b; font-size: 1.2rem"
+                >5,750,000 &ensp;</span
+              >تومان</span
+            >
+            <div class="rating">
+              <input value="5" name="rating" id="star5" type="radio">
+              <label for="star5"></label>
+              <input value="4" name="rating" id="star4" type="radio">
+              <label for="star4"></label>
+              <input value="3" name="rating" id="star3" type="radio">
+              <label for="star3"></label>
+              <input value="2" name="rating" id="star2" type="radio">
+              <label for="star2"></label>
+              <input value="1" name="rating" id="star1" type="radio">
+              <label for="star1"></label>
+            </div>
+          </p>
+          <div class="product-to-cart-section padding-1">
+            <!-- <button>افزودن به سبد خرید</button> -->
+            <button>ورود برای خرید</button>
+          </div>
+        </article>
+        <p class="font-rokh font-size-2 font-weight-700" id="username">
+          username : hami
+        </p>
+        <p class="font-rokh font-size-2 font-weight-700">سبد خرید شما :</p>
+
+        <div class="cart-item flex justify-between items-center padding-1">
+          <img
+            src="./assets/images/NIKE AIR ZOOM PEGASUS 38-black&green.jfif"
+            alt=""
+          />
+          <p class="font-exo2 text-uppercase">
+            NIKE AIR ZOOM PEGASUS 38 black and green
+          </p>
+          <div class="price">
+            <p>7,000,000 تومان</p>
+          </div>
+          <img
+            src="./assets/icons/trash.png"
+            alt=""
+            style="height: 3rem; width: 3rem; cursor: pointer"
+          />
+        </div>
+        <div
+          class="cart-item flex flex-col justify-between items-center padding-1"
+        >
+          <img
+            src="./assets/images/NIKE AIR ZOOM PEGASUS 38-black&green.jfif"
+            alt=""
+          />
+          <p class="font-exo2 text-uppercase">
+            NIKE AIR ZOOM PEGASUS 38 black and green
+          </p>
+          <div class="price">
+            <p>7,000,000 تومان</p>
+          </div>
+          <img
+            src="./assets/icons/trash.png"
+            alt=""
+            style="height: 3rem; width: 3rem; cursor: pointer"
+          />
+        </div>
+        --primary-color: #f5f5f5;
+        --secondary-color: #323232;
+        --button-color: #630460;
+        --button-hover-color: #763b74;
+        --black-color: #000;
+        --white-color: #fff;
+        --logout-color: #ff8585;
+
+        <!-- DARK MODE -->
+
+        --primary-color: #0a0a0a;
+        --secondary-color: #333;
+        --button-color: #413f42;
+        --button-hover-color: #7f8487;
+        --footer-color: #222831;
+        --black-color: #000;
+        --white-color: #fff;
+        --logout-color: #ff8585;
+
+        <!-- LIGHT MODE -->
+
+        --primary-color: #f5f5f5;
+        --secondary-color: #eadbc8;
+        --button-color: #630460;
+        --button-hover-color: #763b74;
+        --black-color: #000;
+        --white-color: #fff;
+        --logout-color: #ff8585;
+        --footer-color: #333;
